@@ -15,3 +15,5 @@ void free_desktop_entry(struct desktop_entry *de);
 
 
 int read_desktop_files_from_dirs(const char **dirnames, int dir_count, struct desktop_entry **entries);
+
+void free_all_desktop_entries(struct desktop_entry **entries, int entry_count);
